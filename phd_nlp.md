@@ -31,6 +31,7 @@ CopeNLU [here](https://copenlu.github.io/)
 EdinburghNLP [here](http://edinburghnlp.inf.ed.ac.uk/)
 Sheffield [here](https://www.sheffield.ac.uk/dcs/research/groups/nlp)
 Saarland University
+StatNLP Heidelberg [here](https://www.cl.uni-heidelberg.de/statnlpgroup/) and [here](https://twitter.com/StatNLP_HD)
 
 He esperado hasta ahora porque me parecía una gran oportunidad trabajar en vuestro grupo
 pero no puedo avanzar si tengo 1 mes de reserach y luego 4 meses de trabajo de ingeniería.
