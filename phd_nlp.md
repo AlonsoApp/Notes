@@ -65,8 +65,8 @@ if not, what would you recommend me to do in order to fit as a PhD student in th
 1. Cual va a ser el tiempo de dedicación a la thesis
 2. Plazos (cuando vamos a termianr esta tesis, ritmo de publicaciones)
 3. Qué libertad voy a tener yo en la toma de decisiones. Que libertdad voy a tener yo para decidir qué es mejor y qué es peor. (Es mi tesis, yo la defiendo frente a la Uni)
-4. Plan de publicaciones. (qué pasa con la IP). Cómo va a encajar la política de publicaciones en mi tesis? Entra dentro de ese "hueco" de "no ponga en peligro la ip de la empresa"? o va a haber una política asociada a mi trabajo?
-5. Qué programa de doctorado? (yo voy a hacer una tesis por la universidad de X) Cómo se pago la matrícula? Tendría la posibilidad de plantear estancias en otros grupos estratégicos para la empresa? (es muy conveniente)
+4. Plan de publicaciones. (qué pasa con la IP). Cómo va a encajar la nueva política de publicaciones de Sherpa en mi tesis? Entra dentro de ese "hueco" de "no ponga en peligro la ip de la empresa"? o va a haber una política asociada a mi trabajo?
+5. Qué programa de doctorado? (yo voy a hacer una tesis por la universidad de X) Cómo será el pago la matrícula? Tendría la posibilidad de plantear estancias en otros grupos estratégicos para la empresa? (es muy conveniente)
 6. Donde estaré? El aula esa Sherpa en la UPV? (no demostrar entusiasmo)
 7. Qué política de congresos va a haber? (ACL, nombrar congresos)
 
