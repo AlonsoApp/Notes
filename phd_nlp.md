@@ -69,7 +69,8 @@ if not, what would you recommend me to do in order to fit as a PhD student in th
 5. Qué programa de doctorado? (yo voy a hacer una tesis por la universidad de X) Cómo será el pago la matrícula? Tendría la posibilidad de plantear estancias en otros grupos estratégicos para la empresa? (es muy conveniente)
 6. Donde estaré? El aula esa Sherpa en la UPV? (no demostrar entusiasmo)
 7. Qué política de congresos va a haber? (ACL, nombrar congresos)
-
+8. Me gustaría estar más involucrado en las conersaciones sobre la tesis.
+9. LxMLS me gustaría atender de este año (Google, Deep Mind, Isabele Augestain de NLP Copenage, Carnegie Mellon, Universität Heidelberg) 20-29 July
 
 
 Antes era un SUPER articulo y ahora es una colección de articulos envueltos en intro y conclusión
