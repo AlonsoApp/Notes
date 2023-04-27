@@ -47,9 +47,11 @@ I have used the different linearization techniques we have at hand to linearize 
 
 ### Baseline linearization
 This is the out-of-the-box linearization provided the ToTTo oficial code found in the [google research repo](https://github.com/google-research/language/tree/38e16ec22e7389ed280dd9edf0c4a0c97219a1cf/language/totto/baseline_preprocessing). This is the most utilized linearization technique in the leaderboard. Is **very inefficient** but it contains all the information provided for each table without changing anything and without giving any problems.
+
 ![Distribution of tables based on the tokens needed to encode their linearization. Y: % of tables that fall between the X interval of its value and the previous one. X increases geometrically.](assets/dist_baseline_bert.png)
 
 Many of these tokens belong to pre-defined xml tags (6 opening tags and 6 closing tags). If we define these tags as special tokens for the tokenizer (train has 120k samples, I won't be hard for the model to learn a good embedding representation), the number of tokens per table reduces significantly.
+
 ![Same distribution but treating special tokens as one](assets/dist_baseline_st_bert.png)
 
 ### Table2Logic linearization
@@ -60,6 +62,7 @@ This is a custom tokenization method that I developed following a similar approa
 The safest way of doing this was by using the out-of-the-box HTML conversion of tables featured in the [official google research repo](https://github.com/google-research/language/tree/38e16ec22e7389ed280dd9edf0c4a0c97219a1cf/language/totto/baseline_preprocessing). And then, use the built-in pandas function to convert a HTML to DataFrame. 
 
 Using this linearization results in the following token length distribution:
+
 ![Distribution of tables based on the tokens needed to encode their linearization. Y: % of tables that fall between the X interval of its value and the previous one. X increases geometrically.](assets/dist_table2logic_bert.png)
 
 The main downside of this linearization process is that it changes the data structure. Through the constraining process of forcing tables into a DataFrame representation (totto -\> html -\> dataframe), data is rearranged and changed:
@@ -69,10 +72,13 @@ The main downside of this linearization process is that it changes the data stru
 ### Triplet linearization
 [(Nan et al., 2021)](https://aclanthology.org/2021.naacl-main.37/) demonstrated in their DART dataset that a sequence of triplet representations (column name, row name, value) for each cell is effective in representing tabular data. While prior work (e.g. [Wiseman et al., 2017](https://doi.org/10.18653/v1/D17-1239)) used a similar representation, DART was the first larger study on how to represent tables. Source: TaTTa [(Gehrmann et al ., 2022)](https://arxiv.org/abs/2211.00142).
 
+TODO: analize triplet linearization
+
 ## Impact of truncation: Where are highlighted cells located
 In order to measure the impact of truncating tables, we can use highlighted cells to see how many tables will be affected by truncating from the bottom up. If highlighted cells are located after the truncation point, critical  information needed to produce the gold sentence will be erased. 
 
 Here is the distribution for the index of the last highlighted token in the tokenized linearization of each table using `Table2Logic linearization`.
+
 ![](assets/highlight_tok_dist_table2logic.png)
 
 ## ToTTo simplified
@@ -92,6 +98,7 @@ Results (for train set):
 5. 68209/120761 56.5% (-1.1%)
 
 Surprisingly, **this does not reduce the average size of tables**. On the contrary, larger tables seem to meet this criteria better.
+
 ![Baseline](assets/dist_baseline_bert_simpl.png)
 ![Table2Logic](assets/dist_table2logic_bert_simpl.png)
 ![Table2Logic: Highlighted](assets/highlight_tok_dist_table2logic_simpl.png)
